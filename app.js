@@ -2,6 +2,7 @@ var express = require('express')
 var app = express()
 var path = require('path')
 require('dotenv').config();
+var multer = require("multer")
 
 app.get('/estado', function(request, response) {
     response.json({ mensaje: "Hola  mundo" })
